@@ -1,0 +1,213 @@
+/*Palette
+
+#000000 - black - faded
+#4A484A - dark grey
+#7C7B7D - lightgrey
+#ED9100 - orange
+#28A100 - green
+*/
+
+/* Pictures are copy right from Espen Skar */
+
+/* Gobal */
+html, body {
+  display: block;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: #4A484A;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  color: #ED9100;
+}
+
+header{
+  height: 100px;
+  border: 2px dashed #28A100;
+  padding: 20px;
+  background: #000;
+}
+
+h1{
+  font-family: 'Alegreya SC', serif;
+  color: #28A100;
+  text-align: center;
+}
+h2 {
+  font-family: 'Alegreya SC', serif;
+  color: #ED9100;
+  text-align: left;
+}
+h3 {
+  text-align: center;
+}
+h6 {
+  text-align: center;
+}
+iframe {
+  width: 80%;
+  height: 400px;
+}
+
+footer {
+  font-family: 'Merriweather', serif;
+  padding: 20px;
+  color: #7C7B7D;
+  background: #000;
+}
+button {
+  background-color: #ED9100;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+a {
+  color: #4A484A;
+  text-decoration: none;
+  text-align: center;
+}
+
+#banner {
+  width: 100px;
+  display: inline;
+}
+.logo {
+  float: left;
+  display: inline;
+  padding: 5px;
+}
+.name {
+  color: white;
+}
+.nav-item {
+  display: inline;
+  padding: 30px;
+  color: #4A484A;
+  text-align: right;
+}
+.info {
+  flex: 1;
+  width: 300px;
+  display: block;
+  margin: left;
+}
+.tours {
+  color: #4A484A;
+}
+.town {
+  text-align: center;
+}
+.footpic {
+  width: 80px;
+}
+
+
+
+
+/*.example from lynda {
+  background: linear-gradient(rgba(141, 153, 174, 0.5), rgba(141, 153, 174, 0.5)), url(../images) no-repeat fixed;
+  background-size: cover;*/
+
+
+
+
+/* Mobile/Tablet size */
+@media only screen and (min-width: 352px) and (max-width: 699px) {
+
+  header {
+    height: 90%;
+    border: 2px dashed #ED9100;
+    padding: 20px;
+  }
+  iframe {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+  }
+  #backHeader {
+    background: #000;
+    padding: 10px;
+  }
+  .nav-item {
+    display: ruby-text-container;
+  }
+  .container {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0px 0px;
+  }
+  .content {
+    background: url(../images/espenskar6.jpg) no-repeat fixed;
+    flex: 1;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .background {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .content2 {
+    background: url(../images/espenskar.jpg) no-repeat fixed;
+    flex: 1;
+    background-size: contain;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .background2 {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0px 0px;
+
+  }
+}
+
+
+/* Disktop size */
+@media only screen and (min-width: 700px) {
+  #backHeader {
+    background: #000;
+    padding-top: 2px;
+  }
+  .sticky {
+      position: sticky;
+      font-family: 'Alegreya SC', serif;
+      color: #28A100;
+      font-size: 2em;
+      top: 0;
+  }
+  .container{
+    flex-direction: row;
+  }
+  .content {
+    background: url(../images/barcode.jpg) no-repeat fixed;
+    flex: 1;
+    background-size: cover;
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .background {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .content2{
+    background: url(../images/barcode.jpg) no-repeat fixed;
+    flex: 1;
+    background-size: cover;
+    text-align: left;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .background2 {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+}
